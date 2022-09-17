@@ -218,8 +218,8 @@ class ACCanvas():
 
     def fromPattern(self, infile_image):
         in_pixels = infile_image.load()
-        for x in range(w):
-            for y in range(h):
+        for x in range(self.w):
+            for y in range(self.h):
                 self.canvas[x][y] = rgbaToACColor(in_pixels[x, y])
         return self
 
